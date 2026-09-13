@@ -6,20 +6,11 @@ const FALLBACK_DATA_URL = "events.json";
 function createRepositoryItem(repository) {
     const item = document.createElement("li");
     const link = document.createElement("a");
-    const name = document.createElement("strong");
-    const details = document.createElement("span");
 
     link.href = repository.url || `https://github.com/${repository.name}`;
     link.target = "_blank";
     link.rel = "noreferrer";
-
-    name.textContent = repository.name;
-    const starredDate = repository.starred || "on GitHub";
-    details.textContent = repository.description
-        ? `${repository.description} Starred ${starredDate}.`
-        : `Starred ${starredDate}.`;
-
-    link.append(name, details);
+    link.textContent = repository.name;
     item.appendChild(link);
     return item;
 }
