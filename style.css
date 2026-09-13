@@ -1,16 +1,14 @@
 body {
-    font-family: sans-serif;
-    margin: 2rem;
     align-items: center;
     background-color: #07152f;
     background-image:
-        radial-gradient(circle at 20% 18%, rgba(255, 231, 117, 0.85) 0 1px, transparent 2px),
-        radial-gradient(circle at 78% 24%, rgba(255, 231, 117, 0.75) 0 1px, transparent 2px),
-        radial-gradient(circle at 38% 72%, rgba(255, 231, 117, 0.7) 0 1px, transparent 2px),
-        repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.025) 0 1px, transparent 1px 7px),
-        linear-gradient(145deg, #0b1e46 0%, #07152f 55%, #030b20 100%);
+        radial-gradient(ellipse at 15% 10%, #183d78 0%, transparent 38%),
+        radial-gradient(ellipse at 88% 28%, #102c5c 0%, transparent 34%),
+        radial-gradient(ellipse at 55% 100%, #111d43 0%, transparent 46%),
+        linear-gradient(135deg, #020817 0%, #07152f 42%, #030817 100%);
     color: #fff7c2;
     display: flex;
+    flex-direction: column;
     font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
     justify-content: center;
     margin: 0;
@@ -23,24 +21,25 @@ body {
 body::before,
 body::after {
     background: #ffe875;
-    border-radius: 50%;
-    box-shadow: 76px 88px 0 1px #ffe875, 190px -18px 0 0 #ffe875, 310px 120px 0 1px #ffe875, 470px 38px 0 0 #ffe875, 610px 170px 0 1px #ffe875, 740px -22px 0 0 #ffe875, 890px 105px 0 1px #ffe875, 1040px 48px 0 0 #ffe875, 1160px 210px 0 1px #ffe875;
+    clip-path: polygon(50% 0%, 61% 36%, 98% 36%, 68% 58%, 79% 100%, 50% 74%, 21% 100%, 32% 58%, 2% 36%, 39% 36%);
     content: "";
-    height: 4px;
+    height: 12px;
     left: 7%;
     opacity: 0.9;
     position: absolute;
     top: 11%;
     transform: rotate(12deg);
-    width: 4px;
+    width: 12px;
 }
 
 body::after {
     box-shadow: 120px 210px 0 0 #ffe875, 270px 310px 0 1px #ffe875, 420px 180px 0 0 #ffe875, 580px 280px 0 1px #ffe875, 760px 190px 0 0 #ffe875, 930px 330px 0 1px #ffe875, 1100px 250px 0 0 #ffe875;
+    height: 9px;
     left: 12%;
     opacity: 0.55;
     top: 60%;
     transform: rotate(-8deg);
+    width: 9px;
 }
 
 h1,
@@ -91,14 +90,4 @@ li:nth-child(even) {
 
 li::first-letter {
     color: #ffe875;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #ddd;
 }
