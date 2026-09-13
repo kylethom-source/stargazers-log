@@ -1,6 +1,96 @@
 body {
     font-family: sans-serif;
     margin: 2rem;
+    align-items: center;
+    background-color: #07152f;
+    background-image:
+        radial-gradient(circle at 20% 18%, rgba(255, 231, 117, 0.85) 0 1px, transparent 2px),
+        radial-gradient(circle at 78% 24%, rgba(255, 231, 117, 0.75) 0 1px, transparent 2px),
+        radial-gradient(circle at 38% 72%, rgba(255, 231, 117, 0.7) 0 1px, transparent 2px),
+        repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.025) 0 1px, transparent 1px 7px),
+        linear-gradient(145deg, #0b1e46 0%, #07152f 55%, #030b20 100%);
+    color: #fff7c2;
+    display: flex;
+    font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 3rem 1.25rem;
+    position: relative;
+}
+
+body::before,
+body::after {
+    background: #ffe875;
+    border-radius: 50%;
+    box-shadow: 76px 88px 0 1px #ffe875, 190px -18px 0 0 #ffe875, 310px 120px 0 1px #ffe875, 470px 38px 0 0 #ffe875, 610px 170px 0 1px #ffe875, 740px -22px 0 0 #ffe875, 890px 105px 0 1px #ffe875, 1040px 48px 0 0 #ffe875, 1160px 210px 0 1px #ffe875;
+    content: "";
+    height: 4px;
+    left: 7%;
+    opacity: 0.9;
+    position: absolute;
+    top: 11%;
+    transform: rotate(12deg);
+    width: 4px;
+}
+
+body::after {
+    box-shadow: 120px 210px 0 0 #ffe875, 270px 310px 0 1px #ffe875, 420px 180px 0 0 #ffe875, 580px 280px 0 1px #ffe875, 760px 190px 0 0 #ffe875, 930px 330px 0 1px #ffe875, 1100px 250px 0 0 #ffe875;
+    left: 12%;
+    opacity: 0.55;
+    top: 60%;
+    transform: rotate(-8deg);
+}
+
+h1,
+p,
+ul {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    color: #ffe875;
+    font-size: clamp(2.4rem, 8vw, 4.5rem);
+    line-height: 1.1;
+    margin: 0 0 0.75rem;
+    text-shadow: 3px 3px 0 #172e5c;
+    transform: rotate(-2deg);
+}
+
+p {
+    color: #fffbe1;
+    font-size: 1.15rem;
+    margin: 0 auto 2rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: min(100%, 34rem);
+}
+
+li {
+    background: rgba(15, 39, 83, 0.78);
+    border: 2px solid #385486;
+    border-radius: 4px 8px 5px 7px;
+    box-shadow: 4px 5px 0 rgba(1, 8, 25, 0.35);
+    color: #fffbe1;
+    font-size: 1.05rem;
+    margin: 0.85rem 0;
+    padding: 1rem 1.25rem;
+    transform: rotate(-0.8deg);
+}
+
+li:nth-child(even) {
+    transform: rotate(0.9deg);
+}
+
+li::first-letter {
+    color: #ffe875;
 }
 
 ul {
