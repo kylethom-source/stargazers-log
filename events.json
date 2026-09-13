@@ -1,14 +1,20 @@
 [
     {
         "name": "octocat/Hello-World",
-        "starred": "2024-01-15"
+        "starred": "2024-01-15",
+        "description": "My first repository on GitHub.",
+        "url": "https://github.com/octocat/Hello-World"
     },
     {
         "name": "github/docs",
-        "starred": "2024-02-02"
+        "starred": "2024-02-02",
+        "description": "The open-source repository for GitHub's documentation.",
+        "url": "https://github.com/github/docs"
     },
     {
-        "name": "octo-org/octo-repo",
-        "starred": "2024-03-21"
+        "name": "denoland/deno",
+        "starred": "2024-03-21",
+        "description": "A secure runtime for JavaScript and TypeScript.",
+        "url": "https://github.com/denoland/deno"
     }
 ]
